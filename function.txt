@@ -1,0 +1,74 @@
+#include<stdio.h>
+#include<iostream>
+#include<conio.h>
+
+using namespace std;
+
+double max_(double a, double b)
+{
+	if(a>b)
+	{
+	return a;
+	}
+	else
+	{
+	return b;
+	}
+}
+double min_(double a, double b)
+{
+	if(a<b)
+	{
+	return a;
+	}
+	else
+	{
+	return b;
+	}
+}
+bool equality(double a, double b)
+{
+	if(a==b)
+	{
+	return true;
+	}
+	else
+	{
+	return false;
+	}
+}
+void main(void)
+{
+	D:
+	A:
+//Execution Starting point
+	cout<<"Max , min or Equality Finder"<<endl;
+	double x; 
+	double y;
+	int choice;
+	cout<<" Enter 1st value: "<<endl;
+	cin>>x;
+	cout<<" Enter 2nd value: "<<endl;
+	cin>>y;
+	cout<<" Press 1 to find Max value:  "<<endl;
+	cout<<" Press 2 to find Min value:  "<<endl;
+	cout<<" Press 3 to find Equal value status:  "<<endl;
+	cin>>choice;
+	switch(choice)
+	{
+		case 1:
+		    cout<<"The Max Value: "<<max_(x,y)<<endl;
+		break;
+		case 2:
+			cout<<"The Min Value: "<<min_(x,y)<<endl;
+		break;
+		case 3:
+			cout<<"Equality Status 0 False or 1 True : "<<equality(x,y)<<endl;
+		break;
+		default:
+			goto A;
+	}
+	goto D;
+
+	getch();//Predfined
+}

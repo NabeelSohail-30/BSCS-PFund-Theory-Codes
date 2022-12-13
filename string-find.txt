@@ -1,0 +1,17 @@
+#include<conio.h>
+#include<string>
+#include<iostream>
+using namespace std;
+
+void main()
+{
+	char input;
+	string sentence="Programming Fundamentals";
+	cout<<sentence<<endl;
+	cout<<" Enter Character to Find the Position "<<endl;
+	cin>>input;
+	int position;
+	position=sentence.find(input);
+	cout<<" The Character is Placed at : "<<position<<endl;
+	getch();
+}

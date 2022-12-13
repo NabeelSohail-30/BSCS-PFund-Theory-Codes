@@ -1,0 +1,38 @@
+#include<iostream>
+#include<stdio.h>
+#include<conio.h>
+using namespace std;
+
+void main()
+{
+        int arr[50], size, del;
+        cout<<"Enter array size( Max:50 )"<<endl;
+        cin>>size;
+        cout<<"Enter array elements"<<endl;
+        for(int i=0; i<size; i++)
+        {
+            cout<<"Enter arr["<<i<<"] Element  "<<endl;
+                cin>>arr[i];
+        }
+        cout<<"Enter element to be delete :: "<<endl;
+        cin>>del;
+        for(int i=0; i<size; i++)
+        {
+                if(arr[i]==del)
+                {
+                        for(int j=i; j<(size-1); j++)
+                        {
+                                arr[j]=arr[j+1];
+                        }
+                       break;
+                }
+        }
+                cout<<"Element deleted successfully.."<<endl;
+                cout<<"Now the new array is "<<endl;
+                for(int i=0; i<(size-1); i++)
+                {
+                        cout<<arr[i]<<" "<<endl;
+                }
+        
+        getch();
+}

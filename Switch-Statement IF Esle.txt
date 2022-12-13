@@ -1,0 +1,58 @@
+#include<conio.h>
+#include<stdio.h>
+#include<iostream>
+
+using namespace std;
+
+void main()
+{
+	a:
+	cout<<" == Point of sale system == "<<endl;
+	int barcode;
+	int bill;
+	cout<<" Enter barcode of the product: "<<endl;
+	cin>>barcode;
+	switch(barcode)
+	{
+	case 123:
+		cout<<" Category: Pet Food "<<endl;
+		cout<<" Enter total Billing amount : "<<endl;
+		cin>>bill;
+		bill=bill+((bill/100)*2);
+		cout<<" Total Billing Amount including GST : "<<bill<<" Rs. "<<endl;
+		if(bill>=5000)
+		{
+		bill=bill-((bill/100)*30);
+		cout<<" Total Bill after 30% discount : "<<bill<<" Rs."<<endl;
+		}
+	break;
+	case 456:
+		cout<<" Category: Sea Food "<<endl;
+		cout<<" Enter total Billing amount : "<<endl;
+		cin>>bill;
+		bill=bill+((bill/100)*5);
+		cout<<" Total Billing Amount including GST : "<<bill<<" Rs. "<<endl;
+		if(bill>=2000)
+		{
+		bill=bill-((bill/100)*20);
+		cout<<" Total Bill after 20% discount : "<<bill<<" Rs."<<endl;
+		}
+	break;
+	case 789:
+		cout<<" Category: Baby Food "<<endl;
+		cout<<" Enter total Billing amount : "<<endl;
+		cin>>bill;
+		bill=bill+((bill/100)*10);
+		cout<<" Total Billing Amount including GST : "<<bill<<" Rs. "<<endl;
+	break;
+	default:
+		cout<<" The Barcode is not found.... "<<endl;
+	}
+	cout<<" testing "<<endl;
+
+	cout<<""<<endl<<endl<<endl;
+
+
+
+goto a;
+}

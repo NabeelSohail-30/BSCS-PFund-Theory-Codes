@@ -1,0 +1,72 @@
+#include<iostream>
+#include<conio.h>
+#include<fstream>
+#include<string>
+
+using namespace std;
+void readfile();
+void writefile();
+
+void main()
+{
+	A:
+int choice;
+	cout<<" Press 1 for reading and 2 for writing : "<<endl;
+	cin>>choice;
+	if(choice==1)
+	{
+		readfile();
+	}
+	else
+	{
+		writefile();
+	}
+	goto A;
+	getch();
+}
+
+void writefile()
+{
+	char filename[50];
+	cout<<" Enter the file name with Extension and Complete location : "<<endl;
+	cin>>filename;
+	ofstream myfile(filename); // to create for writing data
+	if(myfile.is_open()==true)
+	{
+		cout<<"Empty file has been created successfully..."<<endl;
+		string writingdata;
+		cout<<" Enter Data for Writing : "<<endl;
+		cin>>writingdata;
+		myfile<<writingdata;
+		myfile.close();
+		cout<<" file has been Written successfully..."<<endl;
+			
+	}
+	else
+	{
+	   cout<<" File is not created......  "<<endl;
+	}
+}
+void readfile()
+{
+
+	string line;
+	char filename[50];
+	cout<<" Enter file name with Complete location and Extension : "<<endl;
+	cin>>filename;
+	ifstream myfile(filename);// to create for reading data
+	if(myfile.is_open()==true)
+	{
+		while(getline(myfile,line))
+		{
+			cout<<line<<endl;
+		
+		}	
+		myfile.close();
+	}
+	else
+	{
+		cout<<" File is not available....    "<<endl;
+	}
+	
+}

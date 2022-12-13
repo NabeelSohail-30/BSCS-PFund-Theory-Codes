@@ -1,0 +1,32 @@
+#include<iostream>
+#include<conio.h>
+#include<fstream>
+#include<string>
+
+using namespace std;
+
+void main()
+{
+	int sales=0;
+	int com=0;
+	int items=0;
+	cout<<" Salary Calculator : (10% Commission + 500 Salary) "<<endl;
+	cout<<" Items 1 -- 200 "<<endl;
+	cout<<" Items 2 -- 400 "<<endl;
+	cout<<" Items 3 -- 600 "<<endl;
+	cout<<" Items 4 -- 800 "<<endl;
+	
+	while(items!=-1)
+	{
+		cout<<" Enter the list of items sold in last week or -1 to end: "<<endl;
+	cin>>items;
+		if(items==1){sales+=200;}
+		if(items==2){sales+=400;}
+		if(items==3){sales+=600;}
+		if(items==4){sales+=800;}
+	}
+	com=((sales/100)*10);
+	cout<<" Total Salary : "<<com+500<<endl;
+
+	getch();
+}

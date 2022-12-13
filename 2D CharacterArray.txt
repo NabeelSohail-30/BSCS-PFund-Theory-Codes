@@ -1,0 +1,26 @@
+#include<iostream>
+#include<conio.h>
+#include<stdio.h>
+
+using namespace std;
+
+void findvowel()
+{
+	char alph[3][2]={//C0   C1
+				 	 { 'e','c' },//R0
+					 { 'i','o' },//R1
+					 { 'w','a' }//R2
+							       };
+	for(int r=0; r<3; r++)
+	{
+		for(int c=0; c<2; c++)
+		{
+			if('a'==alph[r][c] || 'e'==alph[r][c] || 'i'==alph[r][c])
+			{
+			cout<<alph[r][c]<<endl;
+			}
+		}
+	}	
+}
+
+

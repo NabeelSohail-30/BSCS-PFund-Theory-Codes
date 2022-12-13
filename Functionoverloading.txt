@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<iostream>
+#include<conio.h>
+
+using namespace std;
+
+double areafinder(double h)//Area of Square
+{
+	cout<<"Area of Square "<<endl;
+	return h*h;
+}
+double areafinder(int r, double pi=3.15)//Area of circle
+{
+	cout<<"Area of circle "<<endl;
+	return pi*r*r;
+}
+double areafinder(double b, double h)//Area of rectangle
+{
+	cout<<"Area of rectangle "<<endl;
+	return b*h;
+}
+
+void main(void)
+{
+	cout<<areafinder(2.5)<<endl;
+	cout<<areafinder(9.7,2.6)<<endl;
+	cout<<areafinder(9,3.14)<<endl;
+	getch();//Predfined
+}

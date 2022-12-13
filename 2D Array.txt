@@ -1,0 +1,27 @@
+#include<iostream>
+#include<conio.h>
+#include<stdio.h>
+
+using namespace std;
+
+
+
+void main()
+{
+	int arr[3][3]={//C0 C1 C2 
+					{ 3, 6, 7 },//R0
+					{ 4, 7, 9 },//R1
+					{ 3, 8, 2 }//R2
+							    };
+	for(int r=0; r<3; r++)//Row-> R-> 0 1 2
+	{
+		for(int c=0; c<3; c++)//Column c-> 0 1 2
+		{
+			cout<<" "<<arr[r][c];
+		}
+		cout<<endl;
+	}
+	getch();
+
+}
+

@@ -1,0 +1,26 @@
+#include<iostream>
+#include<conio.h>
+#include<stdio.h>
+
+using namespace std;
+
+int findmin(int myarray[4])
+{
+	int min=myarray[0];
+	for(int i=0; i<5; i++)
+	{
+		if(min>myarray[i])
+		{
+			min=myarray[i];
+		}
+	}
+	return min;
+}
+
+void main()
+{
+	int  arr[5]={3,6,4,8,1};
+	cout<<" The Mininmum Value is " <<findmin(arr)<<endl;
+	getch();
+
+}

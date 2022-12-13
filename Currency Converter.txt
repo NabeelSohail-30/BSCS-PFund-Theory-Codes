@@ -1,0 +1,19 @@
+#include<conio.h>
+#include<iostream>
+
+using namespace std;
+
+void main()
+{
+	A:
+	int amount;
+	cout<<"===Currency Converter==="<<endl<<endl;
+	cout<<"Please Enter amount in dollar $ "<<endl;
+	cin>>amount;
+	cout<<" Amount in  PKR = "<<amount*165<<endl;
+	cout<<"Thank for using abc app.... "<<endl;
+
+	goto A;
+
+getch();
+}

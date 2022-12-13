@@ -1,0 +1,34 @@
+
+#include<iostream>
+#include<conio.h>
+#include<stdio.h>
+
+using namespace std;
+
+void main()
+{	A:
+char c;
+cout<<"===a character is alphabet, digit or special character==="<<endl;
+cout<<" Enter any character: "<<endl;
+cin>>c;
+if(c>='A' && c<='Z')
+{
+	cout<<" The input : "<<c<<": is an Alphabet"<<endl;
+}
+else if(c>='a' && c<='z')
+{
+	cout<<" The input : "<<c<<": is an Alphabet"<<endl;
+}
+else if(c>='0' && c<='9')
+{
+cout<<" The input : "<<c<<": is a Number"<<endl;
+}
+else
+{
+	cout<<" The input : "<<c<<": is a Special Character"<<endl;
+}
+
+	
+
+goto A;
+}

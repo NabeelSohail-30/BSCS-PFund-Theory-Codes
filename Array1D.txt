@@ -1,0 +1,30 @@
+#include<conio.h>
+#include<iostream>
+using namespace std;
+void main()
+{
+	//grd[5->total number of elements]
+	double grd[5];
+	int totalApplicants = 5;
+	double sum=0;
+	cout<<"Enter Values"<<endl;
+	for(int a=0; a<5; a++)
+	{
+	cin>>grd[a];
+	}
+	for(int i=0; i<5; i++)
+	{
+		if(grd[i]>=50)
+		{
+		cout<<i<<" "<<grd[i]<<" Eligible "<<endl;
+		}
+		else
+		{
+		cout<<i<<" "<<grd[i]<<"Not Eligible "<<endl;
+		}
+		sum=sum+grd[i];
+		//sum+=grd[i];
+	}
+		cout<<" Average percentage :"<<sum/totalApplicants<<endl;
+		getch();
+}

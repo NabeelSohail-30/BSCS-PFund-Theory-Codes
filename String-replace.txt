@@ -1,0 +1,14 @@
+#include<conio.h>
+#include<string>
+#include<iostream>
+
+using namespace std;
+void main()
+{
+	string sentence = "Book is good";
+	cout<<sentence<<endl;
+	sentence.replace(8,4,"the best");
+	cout<<sentence<<endl;
+getch();
+}
+

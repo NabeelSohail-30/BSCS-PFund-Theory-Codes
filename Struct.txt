@@ -1,0 +1,32 @@
+#include<conio.h>
+#include<iostream>
+#include<string>
+using namespace std;
+
+struct student
+{
+	int id;
+	string name;
+	double percentage;
+
+};
+
+void main()
+{
+		
+
+	student s;
+	
+	cout<<"Enter Name: "<<endl;
+	cin>>s.name;
+	cout<<"Enter ID: "<<endl;
+	cin>>s.id;
+	cout<<"Enter Percentage: "<<endl;
+	cin>>s.percentage;
+	cout<<"--------------------------"<<endl;
+	cout<<" Name : "<<s.name<<endl;
+	cout<<" Id : "<<s.id<<endl;
+	cout<<" Percentage : "<<s.percentage<<endl;
+		
+		getch();
+}

@@ -1,0 +1,22 @@
+#include<iostream>
+#include<stdio.h>
+#include<conio.h>
+
+using namespace std;
+
+int factorial(int i)
+{
+	if(i<=1)
+	{
+	return 1;
+	}
+	return i*factorial(i-1);
+}
+
+void main()
+{
+	int a=5;
+	cout<<factorial(a)<<endl;
+
+	getch();
+}

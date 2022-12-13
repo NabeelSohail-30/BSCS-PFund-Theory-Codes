@@ -1,0 +1,23 @@
+#include<conio.h>
+#include<iostream>
+#include<stdio.h>
+
+using namespace std;
+
+void main()
+{
+	A:
+	int sal;
+	int tax;
+	cout<<"--Income Tax Calculator--"<<endl<<endl;
+	cout<<" Please insert total salary: "<<endl<<endl;
+	cin>>sal;
+	cout<<" Plesae insert tax percentage : "<<endl;
+	cin>>tax;
+	cout<<" Your Salary Tax is :   "<<(sal/100)*tax<<endl<<endl;
+	cout<<" Salary after tax deduction is : "<<sal-((sal/100)*tax)<<endl<<endl;
+	cout<<" thanks for using abc app..... "<<endl;
+	goto A;
+
+getch();
+}

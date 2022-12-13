@@ -1,0 +1,34 @@
+#include<iostream>
+#include<stdio.h>
+#include<conio.h>
+
+using namespace std;
+
+void main()
+{
+a:
+	char check;
+	int perc;
+	cout<<" ==Admission Eligibility== "<<endl;
+	cout<<" Enter your 12th Percentage: "<<endl;
+	cin>>perc;
+	if(perc>=50)
+	{
+	cout<<" Are you Pakistani: Y or N"<<endl;
+	cin>>check;
+		if(check=='Y')
+		{
+		cout<<" You are Eligible to Take Admission in Batch 2021F "<<endl;
+		}
+		else
+		{
+		cout<<" You are not Eligible to Take Admission in Batch 2021F "<<endl;
+		}
+	}
+	else
+	{
+	cout<<" You are not Eligible to Take Admission in Batch 2021F "<<endl;
+	}
+	goto a;
+
+}

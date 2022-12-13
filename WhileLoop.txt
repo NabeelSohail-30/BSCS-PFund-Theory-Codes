@@ -1,0 +1,20 @@
+#include<conio.h>
+#include<iostream>
+
+using namespace std;
+
+void main()
+{
+	int num;
+	cout<<" Guess the number from 1 to 100 "<<endl;
+	cin>>num;
+	while(num!=100)
+	{
+			cout<<" Try again..... "<<endl;
+			cout<<"Guess the number from 1 to 100"<<endl;
+			cin>>num;
+	}
+	cout<<" Got it.... "<<endl;
+	getch();
+
+}

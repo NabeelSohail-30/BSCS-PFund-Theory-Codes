@@ -1,0 +1,42 @@
+#include<iostream>
+#include<stdio.h>
+#include<conio.h>
+
+using namespace std;
+
+void main()
+{
+	float a;
+	int b;
+	int h;
+	cout<<"== The Area of Triangle =="<<endl;
+	cout<<" Enter  value of Base:  "<<endl;
+	cin>>b;
+	cout<<" Enter value of height: "<<endl;
+	cin>>h;
+	 a=(0.5)*b*h;
+	cout<<" The area of triangle is: "<<a<<endl;
+	getch();
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

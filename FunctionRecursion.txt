@@ -1,0 +1,22 @@
+#include<iostream>
+#include<stdio.h>
+#include<conio.h>
+
+using namespace std;
+
+void display(int a)
+{
+	if(a>=1)
+	{
+		cout<<" SSUET "<<endl;
+		display(a-1);
+	}
+
+}
+
+void main()
+{
+	display(5);
+
+	getch();
+}

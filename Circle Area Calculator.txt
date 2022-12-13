@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+#include<iostream>
+
+using namespace std;
+
+void main()
+{
+	char grd;
+	float a;
+	int r;
+	float pi=3.14;
+	cout<<"== Circle Area Calculator =="<<endl;
+	cout<<" Please insert the Grade of last semester: "<<endl;
+	cin>>grd;
+	cout<<" Your grade is : "<<grd<<endl;
+	cout<<" Please enter radius: "<<endl;
+	cin>>r;
+	a=pi*r*r;
+	cout<<" The area of circle is : "<<a<<endl;
+	getch();
+}
